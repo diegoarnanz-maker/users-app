@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Pagina de inicio</h5>
+    </div>
+    
+    <div class="card-body">
+        <form (ngSubmit)="OnSubmit()">
+            <input name="username" class="form-control my-2 w-25" placeholder="Nombre de ususario"
+                [(ngModel)]="user.username">
+            <input name="password" type="password" class="form-control my-2 w-25" placeholder="Contraseña"
+                [(ngModel)]="user.password">
+            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+        </form>
+    </div>
+</div>
